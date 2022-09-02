@@ -1,0 +1,29 @@
+{
+  "name": "ramsesgarate-npm",
+  "version": "1.0.0",
+  "description": "npx ramsesgarate :)",
+  "author": "Ramses Garate (https://ramsesgarate.com)",
+  "type": "module",
+  "bin": {
+    "ramsesgarate": "./bin/index.js"
+  },
+  "main": "bin/index.js",
+  "scripts": {
+    "lint": "standard --fix",
+    "dev": "node ./bin"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "files": [
+    "bin/index.js"
+  ],
+  "homepage": "https://ramsesgarate.com/",
+  "dependencies": {
+    "boxen": "^6.2.1",
+    "picocolors": "^1.0.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.4"
+  }
+}
