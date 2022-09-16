@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import colors from 'picocolors'
 import boxen from 'boxen'
 
