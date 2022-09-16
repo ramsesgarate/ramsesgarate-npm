@@ -13,7 +13,6 @@
     "dev": "node ./bin"
   },
   "keywords": [],
-  "author": "",
   "license": "MIT",
   "files": [
     "bin/index.js"
