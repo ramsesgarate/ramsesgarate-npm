@@ -1,7 +1,7 @@
 {
   "name": "ramsesgarate-npm",
   "version": "1.0.0",
-  "description": "npx ramsesgarate :)",
+  "description": "A personal card for ramsesgarate :p",
   "author": "Ramses Garate (https://ramsesgarate.com)",
   "type": "module",
   "bin": {
@@ -9,20 +9,36 @@
   },
   "main": "bin/index.js",
   "scripts": {
+    "prepublish": "npm run build",
+    "build": "node bin/index.js",
     "lint": "standard --fix",
-    "dev": "node ./bin"
+    "release": "npm run lint && npm prepublish && npm publish --access=public "
   },
-  "keywords": [],
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
   "license": "MIT",
   "files": [
     "bin/index.js"
   ],
   "homepage": "https://ramsesgarate.com/",
+  "bugs": {
+    "url": "https://github.com/ramsesgarate/ramsesgarate-npm/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramsesgarate/ramsesgarate-npm.git"
+  },
   "dependencies": {
-    "boxen": "^6.2.1",
-    "picocolors": "^1.0.0"
+    "boxen": "6.2.1",
+    "picocolors": "1.0.0"
   },
   "devDependencies": {
-    "standard": "^16.0.4"
+    "standard": "16.0.4"
   }
 }
