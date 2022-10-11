@@ -11,6 +11,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "node bin/index.js",
+    "dev": "nodemon --watch bin/index.js",
     "lint": "standard --fix",
     "release": "npm run lint && npm run prepublish && npm publish --access=public "
   },
@@ -39,6 +40,7 @@
     "picocolors": "1.0.0"
   },
   "devDependencies": {
+    "nodemon": "^2.0.20",
     "standard": "16.0.4"
   }
 }
